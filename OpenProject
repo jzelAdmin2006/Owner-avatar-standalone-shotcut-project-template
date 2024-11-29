@@ -16,7 +16,7 @@ if exist ".\_ShotcutPortable\extracted.flag" (
         )
     )
 	
-    ".\_ShotcutPortable\7z\7za.exe" x ".\_ShotcutPortable\!zipfile!" -o".\_ShotcutPortable" -aoa
+    ".\_ShotcutPortable\7z\7za.exe" x ".\_ShotcutPortable\!zipfile!" -o".\_ShotcutPortable" -aoa >nul 2>&1
 
     if not errorlevel 1 (
         echo > ".\_ShotcutPortable\extracted.flag"
