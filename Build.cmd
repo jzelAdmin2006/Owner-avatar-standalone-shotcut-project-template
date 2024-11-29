@@ -53,7 +53,8 @@ if not exist ".\_ShotcutPortable\7z\extracted_%archive7zHash%.flag" (
 	)
 )
 
-.\_ShotcutPortable\7z\7za.exe a StandaloneProject .\src .\OpenProject .\_ShotcutPortable
-.\_ShotcutPortable\7z\7za.exe rn StandaloneProject.7z OpenProject OpenProject.cmd
+attrib +h ".\OpenProject.ps1"
+.\_ShotcutPortable\7z\7za.exe a StandaloneProject .\src .\OpenProject.ps1 .\OpenProject .\_ShotcutPortable
+.\_ShotcutPortable\7z\7za.exe rn StandaloneProject.7z OpenProject OpenProject.lnk
 
 endlocal
